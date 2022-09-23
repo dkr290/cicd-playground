@@ -13,7 +13,7 @@ jobs:
         run: |
           echo ${{ contains('hello','ll')}}
           echo ${{ startsWith('hello','he')}}
-          echo ${{ endssWith('hello','lo')}}
+          echo ${{ endsWith('hello','lo')}}
           echo ${{ format('hello {0} {1} {2}','word','!','o')}}
   one:
     runs-on: ubuntu-latest 
