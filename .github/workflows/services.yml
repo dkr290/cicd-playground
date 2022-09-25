@@ -15,7 +15,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  node-docker:
+  docker:
     runs-on: ubuntu-latest
     services: 
       app: 
@@ -28,7 +28,7 @@ jobs:
           - 27017:27017
     steps:
       - name: Get url
-        run : curl https://localhost:8080
+        run : curl http://localhost:8080
       
 
    
