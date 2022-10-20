@@ -1,3 +1,3 @@
 #!/bin/bash
-
-echo "Hello" $1
+echo $1 $2
+echo "Hello Script new this is " 
